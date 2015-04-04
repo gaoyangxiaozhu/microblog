@@ -1,4 +1,4 @@
-microblog
+microblog(express version 4.12.1)
 =======
 I recently spent three days to learn node.js using 'node.js开发指南.pdf',and it's just my start for node.
 and I met with many problems when I write microblog program according to the book,beacuse the express version using in this program is so old.
