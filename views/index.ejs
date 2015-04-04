@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+    <div class="container">
+        <% include partials/header %>
+        <% if (!user) { %>
+        <div class="jumbotron">
+            <h1>欢迎来到Microblog</h1>
+            <p>Microbolg 是一个基于Node.js的微博系统</p>
+            <p>
+                <a class="btn btn-primary btn-large" href="/login">登录</a>
+                <a class="btn btn-default btn-large" href="/reg">立即注册</a>
+            </p>
+        </div>
+        <% } else { %>
+        <% include partials/say %>
+        <% } %>
+        <% include partials/posts %>
+    </div>
+    <% include partials/footer %>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/head %>
+</head>
+<body>
+    <% include partials/header %>
+    <div class="container">
+    <%  if (user) { %>
+        <% include partials/say %>
+    <% } %>
+    <% include partials/posts %>
+    </div>
+    <% include partials/footer %>
+</body>
+</html>
